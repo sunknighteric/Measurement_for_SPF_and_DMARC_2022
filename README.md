@@ -6,4 +6,4 @@ We implement two assessments in the scope of the Alexa Top One Million ranked do
 
 All results is got in March 2022, with a detailed list of complete MX, SPF, DMARC and SPF subdomain records for all domains in the list.
 
-dig_crawl.py and data_processing.py are two scripts we used to get the testing results and help analysis the data. We hope the scripts can help you.
+dig_crawl.py and dataprocess.py are two scripts we used to get the testing results and help analysis the data. We hope the scripts can help you.
