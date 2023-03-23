@@ -10,15 +10,19 @@ dig_crawl.py and dataprocess.py are two scripts we used to get the testing resul
 ##SPF Trend Statistics
 
 Main Domain:
+
 <img width="336" alt="1679569261271" src="https://user-images.githubusercontent.com/32115816/227183570-cba3a5c0-70bb-4c4f-b762-bcb0585c3621.png">
 
 Subdomain:
+
 <img width="255" alt="1679569313617" src="https://user-images.githubusercontent.com/32115816/227183778-1a16b713-fab9-42f8-8b7b-d31d22606a3e.png">
 
 ##DMARC Trend Statistics
 
 Main Domain:
+
 <img width="318" alt="1679569350520" src="https://user-images.githubusercontent.com/32115816/227183918-40ee362d-d46b-4d66-9b1a-7ca95cc7f2df.png">
 
 Subdomain:
+
 <img width="239" alt="1679569376002" src="https://user-images.githubusercontent.com/32115816/227184020-ab5dd1cf-adc6-4e28-b729-8a30ce61b56e.png">
