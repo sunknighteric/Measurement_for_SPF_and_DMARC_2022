@@ -26,3 +26,6 @@ Main Domain:
 Subdomain:
 
 <img width="239" alt="1679569376002" src="https://user-images.githubusercontent.com/32115816/227184020-ab5dd1cf-adc6-4e28-b729-8a30ce61b56e.png">
+
+## Discussion
+In all tested domains, nearly half of the domains have SPF configuration issues and more than **70%** of domains have DMARC configuration problems. Although the adoption rate of SPF and DMARC is slowly growing, there is still a lot of room for improvement. Not surprisingly, more than **90%** of the domains do not implement SPF or DMARC configuration for subdomains. This shows that the protection of subdomains has not yet been taken seriously. Although several previous research efforts have highlighted the problem, SPF and DMARC are still not widely accepted and used by the community, and new email security threats continue to emerge. We hope that this measurement study will serve as a wake-up call to all domain operators and that we will see a significant increase in valid SPF and DMARC usage in the near future.
