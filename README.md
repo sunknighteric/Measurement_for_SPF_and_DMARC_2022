@@ -17,7 +17,7 @@ Subdomain:
 
 <img width="255" alt="1679569313617" src="https://user-images.githubusercontent.com/32115816/227183778-1a16b713-fab9-42f8-8b7b-d31d22606a3e.png">
 
-##DMARC Trend Statistics
+## DMARC Trend Statistics
 
 Main Domain:
 
