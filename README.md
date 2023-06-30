@@ -95,10 +95,9 @@ We add a DMARC record as:
 When policy p is set to none, even if the mail fails both SPF and DMARC check, the receiving server may still accept the mail, which is shown in Figure (d).
 
 ## SPF and DMARC Checking Results of Email Service Providers
-
-| Provider |  SPF         | SPF | SPF | SPF Subdomain| SPF Subdomain | SPF Subdomain |DMARC|DMARC |DMARC |DMARC Subdomain|DMARC Subdomain |DMARC Subdomain |
-| ----- | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  |
 | ----- | --------- | ----------- | ------- |--------- | ----------- | ------- |--------- | ----------- | ------- |--------- | ----------- | ------- |
+| Provider |  SPF         | SPF | SPF | SPF Subdomain| SPF Subdomain | SPF Subdomain |DMARC|DMARC |DMARC |DMARC Subdomain|DMARC Subdomain |DMARC Subdomain |
+| | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  |
 | gmail.com  | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | reject     | none       | N/A | N/A | quarantine |
 | yahoo.com  | neutral   | neutral   | neutral   | N/A | N/A | -         | reject | reject     | reject     | N/A | N/A | -          |
 | outlook.com  | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | none       | none       | N/A | N/A | quarantine |
