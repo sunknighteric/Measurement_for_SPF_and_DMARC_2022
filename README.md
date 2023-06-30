@@ -97,7 +97,8 @@ When policy p is set to none, even if the mail fails both SPF and DMARC check, t
 ## SPF and DMARC Checking Results of Email Service Providers
 
 | Provider |  SPF         | SPF | SPF | SPF Subdomain| SPF Subdomain | SPF Subdomain |DMARC|DMARC |DMARC |DMARC Subdomain|DMARC Subdomain |DMARC Subdomain |
-|          | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  |
+| ----- | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  |
+| ----- | --------- | ----------- | ------- |--------- | ----------- | ------- |--------- | ----------- | ------- |--------- | ----------- | ------- |
 | gmail.com  | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | reject     | none       | N/A | N/A | quarantine |
 | yahoo.com  | neutral   | neutral   | neutral   | N/A | N/A | -         | reject | reject     | reject     | N/A | N/A | -          |
 | outlook.com  | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | none       | none       | N/A | N/A | quarantine |
@@ -114,23 +115,23 @@ When policy p is set to none, even if the mail fails both SPF and DMARC check, t
 | godaddy.com  | hard fail | N/A       | hard fail | N/A | N/A | -         | none   | N/A        | reject     | N/A | N/A | -          |
 | yandex.com  | soft fail | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | -          |
 | ovh.com  | neutral   | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | -          |
-| daum.net                                              | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
-| fastmail.com                                          | N/A       | neutral   | neutral   | N/A | N/A | neutral   | N/A    | none       | none       | N/A | N/A | none       |
-| firemail.de                                           | N/A       | neutral   | hard fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
-| freemail.hu                                           | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
-| freenet.de                                            | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
-| gmx.de                                                | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
-| hotmail.com                                           | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
-| inbox.lv                                              | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | quarantine | quarantine | N/A | N/A | quarantine |
-| interia.pl                                            | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
-| mail.de                                               | N/A       | neutral   | soft fail | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
-| naver.com                                             | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
-| op.pl                                                 | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
-| protonmail.com                                        | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | quarantine | quarantine | N/A | N/A | -          |
-| runbox.com                                            | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
-| sapo.pt                                               | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
-| seznam.cz                                             | N/A       | neutral   | neutral   | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
-| t-online.de                                           | N/A       | -         | -         | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
-| tutanota.com                                          | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | none       | quarantine | N/A | N/A | -          |
-| web.de                                                | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | quarantine |
+| daum.net  | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
+| fastmail.com   | N/A       | neutral   | neutral   | N/A | N/A | neutral   | N/A    | none       | none       | N/A | N/A | none       |
+| firemail.de    | N/A       | neutral   | hard fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
+| freemail.hu   | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
+| freenet.de    | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
+| gmx.de   | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
+| hotmail.com   | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
+| inbox.lv  | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | quarantine | quarantine | N/A | N/A | quarantine |
+| interia.pl  | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
+| mail.de  | N/A       | neutral   | soft fail | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
+| naver.com | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
+| op.pl   | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
+| protonmail.com    | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | quarantine | quarantine | N/A | N/A | -          |
+| runbox.com      | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
+| sapo.pt     | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
+| seznam.cz    | N/A       | neutral   | neutral   | N/A | N/A | -         | N/A    | none       | none       | N/A | N/A | -          |
+| t-online.de     | N/A       | -         | -         | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
+| tutanota.com    | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | none       | quarantine | N/A | N/A | -          |
+| web.de   | N/A       | hard fail | hard fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | quarantine |
 
