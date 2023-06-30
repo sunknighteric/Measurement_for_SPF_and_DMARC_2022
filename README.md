@@ -1,6 +1,21 @@
 # Measurement Study of SPF and DMARC
 
+## References
+
+This work has been accepted by the 42nd International Symposium on Reliable Distributed Systems (SRDS 2023).
+
+```
+  @inproceedings{zhang_measurement_2023,
+  title     = {Subdomain Protection is Needed: An SPF and DMARC-based Empirical Measurement Study and Proactive Solution of Email Security},
+  author    = {Han Zhang, Dengke Mi, Libo Chen, Ming Liu, Yong Shi, Zhi Xue},
+  booktitle = {42nd International Symposium on Reliable Distributed Systems, {SRDS} 2023},
+  publisher    = {{IEEE}},
+  year      = {2023}
+}
+```
+
 ## Introduction
+
 We implement two assessments in the scope of the Alexa Top Million ranked domains in September 2021 and March 2022. First we truncated the root domains of all the domains in the list and de-duplicated them, leaving only 224,789 individual domains as the dataset for our tests. The domain list is in /Alexa top one million domain list(De-duplicated version).
 
 All results is got in March 2022, with a detailed list of complete MX, SPF, DMARC and SPF subdomain records for all domains in the list.
