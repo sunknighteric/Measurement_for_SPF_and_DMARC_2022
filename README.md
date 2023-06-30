@@ -96,39 +96,24 @@ When policy p is set to none, even if the mail fails both SPF and DMARC check, t
 
 ## SPF and DMARC Checking Results of Email Service Providers
 
-| \multicolumn{1}{c}{\multirow{2}{*}{	extbf{Provider}}} |           |
-|-------------------------------------------------------|-----------|
-| \multicolumn{3}{c}{\textbf{SPF}}                      |           |
-| \multicolumn{3}{c}{\textbf{SPF Subdomain}}            |           |
-| \multicolumn{3}{c}{\textbf{DMARC}}                    |           |
-| \multicolumn{1}{c}{}                                  |           |
-| 2015                                                  |           |
-| 2020                                                  |           |
-| 2022                                                  |           |
-| 2015                                                  |           |
-| 2020                                                  |           |
-| 2022                                                  |           |
-| 2015                                                  |           |
-| 2020                                                  |           |
-| 2022                                                  |           |
-| 2015                                                  |           |
-| 2020                                                  |           |
-| gmail.com                                             | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | reject     | none       | N/A | N/A | quarantine |
-| yahoo.com                                             | neutral   | neutral   | neutral   | N/A | N/A | -         | reject | reject     | reject     | N/A | N/A | -          |
-| outlook.com                                           | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | none       | none       | N/A | N/A | quarantine |
-| icloud.com                                            | soft fail | N/A       | soft fail | N/A | N/A | -         | none   | N/A        | quarantine | N/A | N/A | -          |
-| hushmail.com                                          | soft fail | N/A       | hard fail | N/A | N/A | -         | -      | N/A        | quarantine | N/A | N/A | -          |
-| lycos.com                                             | soft fail | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | -          | N/A | N/A | -          |
-| mail.com                                              | hard fail | N/A       | hard fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | quarantine |
-| zoho.eu                                               | soft fail | hard fail | hard fail | N/A | N/A | -         | -      | reject     | reject     | N/A | N/A | reject     |
-| mail.ru                                               | soft fail | soft fail | soft fail | N/A | N/A | hard fail | none   | reject     | reject     | N/A | N/A | -          |
-| aol.com                                               | soft fail | soft fail | soft fail | N/A | N/A | -         | reject | reject     | reject     | N/A | N/A | -          |
-| qq.com                                                | soft fail | N/A       | hard fail | N/A | N/A | -         | none   | N/A        | quarantine | N/A | N/A | -          |
-| me.com                                                | soft fail | N/A       | soft fail | N/A | N/A | -         | none   | N/A        | quarantine | N/A | N/A | -          |
-| facebook.com                                          | hard fail | N/A       | hard fail | N/A | N/A | -         | reject | N/A        | reject     | N/A | N/A | -          |
-| godaddy.com                                           | hard fail | N/A       | hard fail | N/A | N/A | -         | none   | N/A        | reject     | N/A | N/A | -          |
-| yandex.com                                            | soft fail | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | -          |
-| ovh.com                                               | neutral   | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | -          |
+| Provider |  SPF         | SPF | SPF | SPF Subdomain| SPF Subdomain | SPF Subdomain |DMARC|DMARC |DMARC |DMARC Subdomain|DMARC Subdomain |DMARC Subdomain |
+|          | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  |
+| gmail.com  | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | reject     | none       | N/A | N/A | quarantine |
+| yahoo.com  | neutral   | neutral   | neutral   | N/A | N/A | -         | reject | reject     | reject     | N/A | N/A | -          |
+| outlook.com  | soft fail | soft fail | soft fail | N/A | N/A | -         | none   | none       | none       | N/A | N/A | quarantine |
+| icloud.com  | soft fail | N/A       | soft fail | N/A | N/A | -         | none   | N/A        | quarantine | N/A | N/A | -          |
+| hushmail.com  | soft fail | N/A       | hard fail | N/A | N/A | -         | -      | N/A        | quarantine | N/A | N/A | -          |
+| lycos.com  | soft fail | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | -          | N/A | N/A | -          |
+| mail.com  | hard fail | N/A       | hard fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | quarantine |
+| zoho.eu  | soft fail | hard fail | hard fail | N/A | N/A | -         | -      | reject     | reject     | N/A | N/A | reject     |
+| mail.ru  | soft fail | soft fail | soft fail | N/A | N/A | hard fail | none   | reject     | reject     | N/A | N/A | -          |
+| aol.com | soft fail | soft fail | soft fail | N/A | N/A | -         | reject | reject     | reject     | N/A | N/A | -          |
+| qq.com   | soft fail | N/A       | hard fail | N/A | N/A | -         | none   | N/A        | quarantine | N/A | N/A | -          |
+| me.com   | soft fail | N/A       | soft fail | N/A | N/A | -         | none   | N/A        | quarantine | N/A | N/A | -          |
+| facebook.com  | hard fail | N/A       | hard fail | N/A | N/A | -         | reject | N/A        | reject     | N/A | N/A | -          |
+| godaddy.com  | hard fail | N/A       | hard fail | N/A | N/A | -         | none   | N/A        | reject     | N/A | N/A | -          |
+| yandex.com  | soft fail | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | -          |
+| ovh.com  | neutral   | N/A       | soft fail | N/A | N/A | -         | -      | N/A        | none       | N/A | N/A | -          |
 | daum.net                                              | N/A       | soft fail | soft fail | N/A | N/A | -         | N/A    | -          | none       | N/A | N/A | -          |
 | fastmail.com                                          | N/A       | neutral   | neutral   | N/A | N/A | neutral   | N/A    | none       | none       | N/A | N/A | none       |
 | firemail.de                                           | N/A       | neutral   | hard fail | N/A | N/A | -         | N/A    | -          | -          | N/A | N/A | -          |
