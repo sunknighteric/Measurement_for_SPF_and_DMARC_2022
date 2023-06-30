@@ -96,6 +96,10 @@ When policy p is set to none, even if the mail fails both SPF and DMARC check, t
 
 ## SPF and DMARC Checking Results of Email Service Providers
 
+Table below summarizes SPF and DMARC adoption change situation of thirty-five domains. Only one email provider (t-online.de) does not support SPF or DMARC. Since 2015, six domains have strengthen their SPF configuration policy. The policy for SPF is mostly configured as soft fail or hard fail, and only three are set as neutral. None of the domains uses the pass mechanism. In case of DMARC, compared with previous results, ten domains start to have DMARC configuration and still there are six domains do not support DMARC. Sixteen providers use testing mode with the none policy (e.g., gmail.com), seven use the quarantine policy, and six use the strictest reject policy.
+
+For subdomains, only Mail.ru has set a hard fail SPF record for *.mail.ru, and only seven domains have configured the sp policy of DMARC to protect their subdomains.
+
 | Provider |  SPF         | SPF | SPF | SPF Subdomain| SPF Subdomain | SPF Subdomain |DMARC|DMARC |DMARC |DMARC Subdomain|DMARC Subdomain |DMARC Subdomain |
 | ----- | --------- | ----------- | ------- |--------- | ----------- | ------- |--------- | ----------- | ------- |--------- | ----------- | ------- |
 | | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  | 2015       | 2020  | 2022  |
