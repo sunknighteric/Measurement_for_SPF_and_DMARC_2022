@@ -4,12 +4,16 @@
 
 This work is part of our paper "Subdomain Protection is Needed: An SPF and DMARC-based Empirical Measurement Study and Proactive Solution of Email Security". This paper has been accepted by the 42nd International Symposium on Reliable Distributed Systems (SRDS 2023).
 
+··
+
 @INPROCEEDINGS{eric,
   author={H. Zhang, D. Mi, L. Chen, M. Liu, Y. Shi and Z. Xue},
   booktitle={2022 41st International Symposium on Reliable Distributed Systems (SRDS)}, 
   title={Subdomain Protection is Needed: An SPF and DMARC-based Empirical Measurement Study and Proactive Solution of Email Security}, 
   year={2023}
   }
+  
+  ··
 
 We implement two assessments in the scope of the Alexa Top Million ranked domains in September 2021 and March 2022. First we truncated the root domains of all the domains in the list and de-duplicated them, leaving only 224,789 individual domains as the dataset for our tests. The domain list is in /Alexa top one million domain list(De-duplicated version).
 
